@@ -24,35 +24,40 @@
         nav ul {
             list-style: none;
             padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
         }
         nav ul li {
-            display: inline;
-            margin: 0 15px;
+            margin: 5px 10px;
         }
         nav ul li a {
             color: white;
             text-decoration: none;
             transition: color 0.3s;
+            padding: 10px;
         }
         nav ul li a:hover {
             color: #ffcc00;
         }
         main {
             flex: 1;
-            padding-bottom: 50px;
+            padding: 20px;
         }
         section {
             padding: 20px;
             background: white;
-            margin: 20px;
+            margin: 20px auto;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            text-align: center;
+            text-align: left;
+            max-width: 1200px;
         }
         section img {
             max-width: 100%;
             height: auto;
-            margin: 10px 0;
+            margin: 10px auto;
+            display: block;
         }
         section h2 a {
             text-decoration: none;
@@ -69,6 +74,33 @@
             padding: 10px 0;
             position: relative;
             width: 100%;
+        }
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            nav ul li {
+                margin: 10px 0;
+            }
+            section {
+                margin: 10px;
+                padding: 15px;
+            }
+        }
+        @media (max-width: 480px) {
+            body {
+                font-size: 14px;
+            }
+            header h1 {
+                font-size: 20px;
+            }
+            nav ul li a {
+                padding: 8px;
+            }
+            section {
+                padding: 10px;
+            }
         }
     </style>
 </head>
@@ -98,9 +130,9 @@
           <p>Maps, population data, and key statistics.</p>
 			<p>Milne Bay Province, located in the southeastern region of Papua New Guinea, consists of <strong>four districts and more than 600 islands</strong>, of which approximately <strong>160 are inhabited</strong>. The <strong>total land area is about 14,000 square kilometers</strong>, with a vast maritime zone offering extensive economic opportunities.</p>
 		  <ul>
-          <li><strong>Population:</strong> Over <strong>276,000 people</strong> (based on recent estimates).</li>
-          <li><strong>Ethnic Diversity:</strong> The province is home to <strong>several indigenous language groups</strong>, reflecting a rich cultural heritage.</li>
-		  <li><strong>Urban & Rural Distribution:</strong> The capital, <strong>Alotau</strong>, is the main urban center, while most of the population resides in rural and island communities.</li>
+          <li><strong>POPULATION:</strong> Over <strong>276,000 people</strong> (based on recent estimates).</li>
+          <li><strong>ETHNIC DIVERSITY:</strong> The province is home to <strong>several indigenous language groups</strong>, reflecting a rich cultural heritage.</li>
+		  <li><strong>URBAN & RURAL DISTRIBUTION:</strong> The capital, <strong>Alotau</strong>, is the main urban center, while most of the population resides in rural and island communities.</li>
 		  </ul>
         </section>
 				
@@ -110,10 +142,10 @@
           <p>Districts, LLGs, and governance structure.</p>
 		  <p>The province is divided into <strong>four districts</strong>, each with its own <strong>Local Level Governments (LLGs)</strong> to facilitate governance and development.</p>
 		  <ul>
-          <li><strong>Alotau District:</strong> Includes Alotau town, the commercial and administrative hub.</li>
-          <li><strong>Esa’ala District:</strong> Comprises islands such as Goodenough, Fergusson, and Normanby, with a strong focus on <strong>fishing and tourism.</strong></li>
-		  <li><strong>Kiriwina-Goodenough District:</strong> Home to the <strong>Trobriand Islands</strong>, known for their unique culture and yam-based economy.</li>
-		  <li><strong>Samarai-Murua District:</strong> Covers the Louisiade Archipelago, a region with high <strong>marine biodiversity</strong> and <strong>potential for eco-tourism and fisheries.</strong></li>
+          <li><strong>ALOTAU DISTRICT:</strong> Includes Alotau town, the commercial and administrative hub.</li>
+          <li><strong>ESA’ALA DISTRICT:</strong> Comprises islands such as Goodenough, Fergusson, and Normanby, with a strong focus on <strong>fishing and tourism.</strong></li>
+		  <li><strong>KIRIWINA-GOODENOUGH DISTRICT:</strong> Home to the <strong>Trobriand Islands</strong>, known for their unique culture and yam-based economy.</li>
+		  <li><strong>SAMARAI-MURUA DISTRICT:</strong> Covers the Louisiade Archipelago, a region with high <strong>marine biodiversity</strong> and <strong>potential for eco-tourism and fisheries.</strong></li>
 		  </ul>
 		  <p>Each district operates through <strong>LLGs</strong>, which are responsible for <strong>service delivery, economic development, and local governance.</strong></p>
         </section>
@@ -124,10 +156,13 @@
           <p>Economic potential in <strong>oil palm, fisheries, tourism, and forestry.</strong></p>
 		  <p>Milne Bay Province has a <strong>diverse economy</strong>, with significant potential in <strong>agriculture, fisheries, tourism, and forestry</strong>.</p>
 		  <ul>
-		    <li><strong>Oil Palm:</strong> The province has <strong>suitable land</strong> for <strong>oil palm expansion</strong>, with <strong>growing investment interest</strong> in sustainable palm oil production. </li>
-			<li><strong>Fisheries:</strong> Milne Bay’s <strong>extensive maritime area</strong> provides opportunities for <strong>tuna fishing, aquaculture, and marine resource development</strong>. The province is a key player in PNG’s <strong>fishing industry</strong>. </li>
-			<li><strong>Tourism:</strong> With <strong>pristine islands, rich marine biodiversity, and cultural heritage</strong>, tourism is a <strong>high-potential industry</strong>. Key attractions include the <strong>Trobriand Islands, Samarai Island, and diving hotspots</strong> such as <strong>the Coral Triangle</strong>.</li>
-			<li><strong>Forestry:</strong> The province has <strong>valuable timber resources</strong>, though <strong>sustainable forestry management</strong> is needed to balance economic benefits with environmental conservation.  </li>
+		    <li><strong>OIL PALM:</strong> The province has <strong>suitable land</strong> for <strong>oil palm expansion</strong>, with <strong>growing investment interest</strong> in sustainable palm oil production. </li>
+			  <p></p>
+			<li><strong>FISHERIES:</strong> Milne Bay’s <strong>extensive maritime area</strong> provides opportunities for <strong>tuna fishing, aquaculture, and marine resource development</strong>. The province is a key player in PNG’s <strong>fishing industry</strong>. </li>
+			  <p></p>
+			<li><strong>TOURISM:</strong> With <strong>pristine islands, rich marine biodiversity, and cultural heritage</strong>, tourism is a <strong>high-potential industry</strong>. Key attractions include the <strong>Trobriand Islands, Samarai Island, and diving hotspots</strong> such as <strong>the Coral Triangle</strong>.</li>
+			  <p></p>
+			<li><strong>FORESTRY:</strong> The province has <strong>valuable timber resources</strong>, though <strong>sustainable forestry management</strong> is needed to balance economic benefits with environmental conservation.  </li>
 		  </ul>
 		  <p>These economic strengths make Milne Bay a <strong>strategic hub for investment and sustainable development</strong>, aligning with <strong>national and regional growth objectives</strong>.</p>
       </section>
